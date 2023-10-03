@@ -1,0 +1,9 @@
+The script challenge.ts is a web scraping tool that extracts structured data from the public pages of Y Combinator ("YC") companies. It utilizes the Crawlee library to scrape each company's YC profile page and the Cheerio library for HTML parsing. The script parses a list of company names and URLs from the inputs/companies.csv file and visits each company's profile page to extract key information.
+
+The extracted information includes core company details such as name, description, and founding year, as well as information about the founders, jobs, news stories, and launch posts. The script combines all the extracted information into a well-structured TypeScript interface and writes the resulting array of objects, one object per company, to the out/scraped.json file.
+
+The script follows a functional and immutable code style, using TypeScript with explicit typing for every variable and function. It makes use of helper functions and functional constructs like map, reduce, and filter. Promises and async/await are used for asynchronous operations, and TypeScript generics and interfaces are utilized where applicable.
+
+To ensure code quality, the script is formatted using Prettier and passes all TypeScript compiler checks. It is recommended to run tsx runner.ts to test the code and generate the out/scraped.json file. The script is designed to handle various company profiles and is configured to avoid rate-limiting or IP banning. It aims to extract as much structured data as possible from the HTML pages of YC companies.
+
+Overall, the script provides a comprehensive solution for scraping YC company data, delivering a finished JSON file that contains valuable information about each company.

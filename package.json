@@ -1,0 +1,15 @@
+{
+  "name": "yc-scraper",
+  "version": "1.0.0",
+  "description": "The script challenge.ts is a web scraping tool that extracts structured data from the public pages of Y Combinator (\"YC\") companies. It utilizes the Crawlee library to scrape each company's YC profile page and the Cheerio library for HTML parsing. The script parses a list of company names and URLs from the inputs/companies.csv file and visits each company's profile page to extract key information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "crawlee": "^3.5.5",
+    "papaparse": "^5.4.1"
+  }
+}
